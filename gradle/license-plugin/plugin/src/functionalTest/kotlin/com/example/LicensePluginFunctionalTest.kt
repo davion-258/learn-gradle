@@ -10,7 +10,7 @@ import org.gradle.testkit.runner.GradleRunner
 import org.junit.jupiter.api.io.TempDir
 
 /**
- * A simple functional test for the 'org.example.greeting' plugin.
+ * A simple functional test for the 'com.example.greeting' plugin.
  */
 class LicensePluginFunctionalTest {
 
@@ -25,7 +25,7 @@ class LicensePluginFunctionalTest {
         settingsFile.writeText("")
         buildFile.writeText("""
             plugins {
-                id('org.example.greeting')
+                id('com.example.greeting')
             }
         """.trimIndent())
 
@@ -38,6 +38,6 @@ class LicensePluginFunctionalTest {
         val result = runner.build()
 
         // Verify the result
-        assertTrue(result.output.contains("Hello from plugin 'org.example.greeting'"))
+        assertTrue(result.output.contains("Hello from plugin 'com.example.greeting'"))
     }
 }

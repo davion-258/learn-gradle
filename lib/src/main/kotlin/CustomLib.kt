@@ -1,4 +1,4 @@
-package org.lib
+package com.lib
 
 class CustomLib {
     companion object {

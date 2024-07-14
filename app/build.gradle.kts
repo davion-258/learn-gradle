@@ -47,7 +47,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass.set("org.example.AppKt")
+    mainClass.set("com.example.AppKt")
 }
 
 tasks.named<Test>("test") {

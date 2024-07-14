@@ -8,13 +8,13 @@ import kotlin.test.Test
 import kotlin.test.assertNotNull
 
 /**
- * A simple unit test for the 'org.example.greeting' plugin.
+ * A simple unit test for the 'com.example.greeting' plugin.
  */
 class LicensePluginTest {
     @Test fun `plugin registers task`() {
         // Create a test project and apply the plugin
         val project = ProjectBuilder.builder().build()
-        project.plugins.apply("org.example.greeting")
+        project.plugins.apply("com.example.greeting")
 
         // Verify the result
         assertNotNull(project.tasks.findByName("greeting"))
